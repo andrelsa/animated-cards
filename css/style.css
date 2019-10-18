@@ -1,7 +1,7 @@
-:root{
+:root {
     --background-dark: #2d3548;
-    --text-light: rgba(255,255,255,0.6);
-    --text-lighter: rgba(255,255,255,0.9);
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
     --spacing-s: 8px;
     --spacing-m: 16px;
     --spacing-l: 24px;
@@ -10,24 +10,25 @@
     --width-container: 1200px;
 }
 
-*{
+* {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     height: 100%;
     font-family: 'Reem Kufi', sans-serif;
     font-size: 16px;
 }
 
-body{
+body {
     height: 100%;
+    background-color: #09f780;
 }
 
-.hero-section{
+.hero-section {
     align-items: flex-start;
     background-color: #09f780;
     display: flex;
@@ -36,7 +37,13 @@ body{
     padding: var(--spacing-xxl) var(--spacing-l);
 }
 
-.cgrid{
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cgrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: var(--spacing-l);
@@ -45,31 +52,31 @@ body{
     width: 100%;
 }
 
-@media(min-width: 540px){
-    .cgrid{
+@media (min-width: 540px) {
+    .cgrid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media(min-width: 960px){
-    .cgrid{
+@media (min-width: 960px) {
+    .cgrid {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-.card{
+.card {
     list-style: none;
     position: relative;
 }
 
-.card:before{
+.card:before {
     content: '';
     display: block;
     padding-bottom: 150%;
     width: 100%;
 }
 
-.cardbg{
+.cardbg {
     background-size: cover;
     background-position: center;
     border-radius: var(--spacing-l);
@@ -81,16 +88,15 @@ body{
     top: 0;
     transform-origin: center;
     transform: scale(1) translateZ(0);
-    transition:
-    filter 200ms linear,
+    transition: filter 200ms linear,
     transform 200ms linear;
 }
 
-.card:hover .cardbg{
+.card:hover .cardbg {
     transform: scale(1.10) translateZ(0);
 }
 
-.ccontent{
+.ccontent {
     left: 0;
     padding: var(--spacing-l);
     position: absolute;
@@ -98,13 +104,13 @@ body{
 }
 
 h3 {
-    font: bold;
+    font-weight: bold;
 }
 
-.textcard{
+.textcard {
     color: var(--text-lighter);
     font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     line-height: 1.4;
     word-spacing: 100vw;
 }
